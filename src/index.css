@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* Custom font for a premium look */
+body {
+  /* font-family: 'Inter', system-ui, -apple-system, sans-serif; */
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  margin: 0;
+  padding: 0; 
+  min-height: 100vh;
+}
+
+/* ---------- PREMIUM LIGHT GLASS PANEL ---------- */
+.light-glass {
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+  border-radius: 24px;
+  box-shadow: 0 8px 32px 0 var(--glass-shadow);
+}
+
+/* ---------- SOFT SHADOW CARD ---------- */
+.modern-card {
+  background: #ffffff;
+  border-radius: 20px;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 10px 10px 20px #d1d9e6, -10px -10px 20px #ffffff;
+}
+
+.modern-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 15px 15px 30px #d1d9e6, -15px -15px 30px #ffffff;
+}
+
+/* ---------- GRADIENT TEXT ---------- */
+.text-gradient {
+  background: linear-gradient(to right, #2d3748, #4a5568);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(2deg);
+  }
+}
+
+.animate-float-slow {
+  animation: float 6s ease-in-out infinite;
+}
+
+.text-gradient-primary {
+  background: linear-gradient(to right, #3b82f6, #a855f7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.fsstyle{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
