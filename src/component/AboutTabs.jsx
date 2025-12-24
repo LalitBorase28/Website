@@ -8,9 +8,6 @@ const AboutTabs = () => {
   return (
     <section className="relative w-full overflow-hidden">
 
-      {/* =========================
-          FEATURES SECTION
-      ========================= */}
       <div
         className="
           relative pt-10
@@ -19,16 +16,7 @@ const AboutTabs = () => {
       >
       <Bubbles />
 
-      {/* <div
-        className="relative pt-16 overflow-hidden"
-        style={{
-          backgroundImage: `url(${bgimg})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
-        
-        <div className="absolute inset-0 bg-[#e7e0a5]/60 backdrop-blur-sm" /> */}
+     
 
         <div className="relative pb-16">
           <motion.div
