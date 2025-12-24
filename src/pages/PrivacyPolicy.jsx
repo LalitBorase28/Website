@@ -101,7 +101,7 @@ const PrivacyPolicy = () => {
           <div className="mt-20 pt-10 border-t border-white/5 text-center">
             <p className="text-slate-500 text-sm">
               Questions about this policy? Reach out to <br />
-              <span className="text-amber-500 font-bold">legal@khajurahoheritage.com</span>
+              <span className="text-amber-500 font-bold">info@microintegrated.in</span>
             </p>
           </div>
         </div>
