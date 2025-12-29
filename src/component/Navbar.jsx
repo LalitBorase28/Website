@@ -40,7 +40,7 @@ const Navbar = () => {
   // Helper to render links consistently
   const renderNavLink = (link, isMobile = false) => {
     const commonClass = isMobile 
-      ? `text-3xl font-black transition-all ${active === link.id ? "text-orange-500 translate-x-4" : "text-slate-300"}`
+      ? `text-xl font-black transition-all ${active === link.id ? "text-orange-500 translate-x-4" : "text-slate-300"}`
       : `px-5 py-2 rounded-full text-sm font-semibold transition-all duration-300 ${
           active === link.id
             ? "bg-gradient-to-r from-orange-500 to-orange-600 text-white shadow-lg shadow-orange-500/30"
@@ -99,18 +99,18 @@ const Navbar = () => {
 
           {/* MOBILE MENU BUTTON */}
           <button onClick={() => setOpen(true)} className="md:hidden p-2 rounded-lg text-white bg-white/10">
-            <span className="text-2xl">☰</span>
+            <span className="text-xl">☰</span>
           </button>
         </div>
       </header>
 
       {/* MOBILE DRAWER */}
-      <aside className={`fixed top-0 left-0 h-full w-full bg-[#0f172a] z-50 transform transition-transform duration-500 ${open ? "translate-x-0" : "-translate-x-full"}`}>
+      <aside className={`fixed top-0 left-0 h-full w-[80%] bg-[#0f172a] z-50 transform transition-transform duration-500 ${open ? "translate-x-0" : "-translate-x-full"}`}>
         <div className="p-6 flex justify-between items-center border-b border-white/10 bg-[#1e293b]">
           <span className="font-bold text-xl text-white">Khajuraho</span>
-          <button onClick={() => setOpen(false)} className="text-3xl text-orange-500">✕</button>
+          <button onClick={() => setOpen(false)} className="text-xl text-orange-500">✕</button>
         </div>
-        <nav className="flex flex-col p-10 space-y-6">
+        <nav className="flex flex-col p-5 space-y-4">
           {links.map((link) => renderNavLink(link, true))}
         </nav>
       </aside>
